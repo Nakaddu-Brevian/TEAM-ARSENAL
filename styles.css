@@ -1,0 +1,353 @@
+/* ========================================================
+   Arsenal Pro Website - Unified CSS
+   Designed by Brevian & Team | IT Professional Look
+   ======================================================== */
+
+/* ------------------------------
+   General Body & Background
+------------------------------ */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  background: url('images/arsenal_logo_bg.png') center center no-repeat fixed;
+  background-size: 250px;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+
+/* ------------------------------
+   Typography & Headings
+------------------------------ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #da291c;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  border-left: 5px solid #da291c;
+  padding-left: 12px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* ------------------------------
+   Navbar
+------------------------------ */
+.navbar {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: #111;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand strong {
+  font-size: 1.3rem;
+  color: #da291c;
+}
+
+.nav-link {
+  color: #fff !important;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+  transform: scale(1.05);
+}
+
+.navbar img {
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.4));
+}
+
+/* ------------------------------
+   Hero Sections
+------------------------------ */
+.hero, .bg-danger {
+  background: linear-gradient(135deg, #da291c, #b71c1c);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.hero-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+}
+
+/* ------------------------------
+   Buttons
+------------------------------ */
+.btn-light, .btn-danger {
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-light {
+  color: #da291c;
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-light:hover {
+  color: #b71c1c;
+  background: #ffd700;
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background-color: #da291c;
+  border: none;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #b71c1c;
+  color: #ffd700;
+  transform: scale(1.05);
+}
+
+/* ------------------------------
+   Cards
+------------------------------ */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-body h5 {
+  color: #da291c;
+}
+
+/* ------------------------------
+   Tables
+------------------------------ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #da291c;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* ------------------------------
+   Forms
+------------------------------ */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #da291c;
+  outline: none;
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 20px 0;
+}
+
+/* ------------------------------
+   Links & Hover
+------------------------------ */
+a {
+  color: #da291c;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* ------------------------------
+   Gallery & Images
+------------------------------ */
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* ------------------------------
+   Responsive Tweaks
+------------------------------ */
+@media (max-width: 768px) {
+  .display-4, h2.hero-title {
+    font-size: 1.8rem;
+  }
+  .card-body p {
+    font-size: 0.95rem;
+  }
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ------------------------------
+   Utility Classes
+------------------------------ */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 1rem; }
+
+
+
+
+/* ------------------------------
+   Navbar
+------------------------------ */
+.navbar {
+  background: linear-gradient(90deg, #111, #222);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+.navbar-brand strong {
+  color: #da291c;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+  transform: scale(1.05);
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+footer {
+  background: linear-gradient(90deg, #111, #222);
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+}
+
+footer h5 {
+  color: #da291c;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+footer .container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col-md-4 {
+  margin-bottom: 20px;
+}
+
+

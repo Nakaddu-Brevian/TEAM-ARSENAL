@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arsenal FC | Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background: linear-gradient(rgba(228, 78, 78, 0.87), rgba(226, 10, 32, 0.9)), 
+                  url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Emirates_Stadium_-_panoramio_%281%29.jpg/1200px-Emirates_Stadium_-_panoramio_%281%29.jpg') center/cover no-repeat;
+      color: black;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .contact-card {
+      transition: transform 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    .social-icons a {
+      color: #dc3545;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #b02a37;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Arsenal Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:black;">
+  <div class="container">
+    <!-- Arsenal Logo -->
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+      <img src="images/arsenal_logo.png" alt="Logo" width="40" class="me-2">
+      Arsenal FC
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="fixtures.html">Fixtures</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="tickets.html">Tickets</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+        <li class="nav-item"><a class="nav-link" href="club.html">Club</a></li>
+        <li class="nav-item"><a class="nav-link" href="more.html">More</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <h1>ARSENAL CONTACT INFO</h1>
+  <p>Get in touch with the Pride of North London where passion meets excellence. <br>
+    At Arsenal Football Club, our commitment to fans, partners, and the community goes beyond football. <br>
+    Whether you’re reaching out to share feedback, inquire about club events, explore collaborations, <br>
+    or simply express your love for the Gunners, we’re always here to connect and keep the Arsenal spirit alive worldwide.</p>
+</header>
+
+<div class="container my-5">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold text-danger">We’d Love to Hear from You</h2>
+    <p class="text-muted">Whether you’re a lifelong fan or a new supporter, our team is always ready to connect. 
+       Reach out for inquiries about tickets, partnerships, community programs, or fan experiences.</p>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card p-4 shadow-sm contact-card">
+        <h4 class="text-danger">Contact Information</h4>
+        <p><strong>Email:</strong> info@arsenal.com</p>
+        <p><strong>Phone:</strong> +44 1234 567890</p>
+        <p><strong>Address:</strong> Emirates Stadium, Hornsey Rd, London, N7 7AJ, United Kingdom</p>
+        <hr>
+        <h5 class="text-danger">Follow Us</h5>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card p-4 shadow-sm contact-card">
+        <h4 class="text-danger">Send Us a Message</h4>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Message subject">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-danger w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+<footer>
+  <p>&copy; 2025 Arsenal FC | Designed by Team Arsenal| Uganda Christian University</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</body>
+</html>

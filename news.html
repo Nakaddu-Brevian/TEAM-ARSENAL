@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arsenal FC | News</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Arsenal Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:black;">
+  <div class="container">
+    <!-- Arsenal Logo -->
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+      <img src="images/arsenal_logo.png" alt="Logo" width="40" class="me-2">
+      Arsenal FC
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="fixtures.html">Fixtures</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="tickets.html">Tickets</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+        <li class="nav-item"><a class="nav-link" href="club.html">Club</a></li>
+        <li class="nav-item"><a class="nav-link" href="more.html">More</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="text-center text-white bg-dark py-4">
+  <h1>ARSENAL NEWS</h1>
+  <p>Latest Club News & Updates</p>
+  <section class="hero text-center text-white bg-dark py-5">
+  <div class="hero-content">
+    <h2>Breaking Arsenal Headlines</h2>
+    <p>Get the latest updates from the Emirates and beyond</p>
+  </div>
+</section>
+</header>
+
+
+<div class="divider my-4"></div>
+
+<div class="container my-5">
+  <h2 class="mb-4 text-center text-danger">Recent Stories</h2>
+  <div class="row g-4">
+    <!-- Story 1 -->
+    <div class="col-md-6">
+      <div class="card p-3 shadow-sm">
+        <img src="https://img.chelseafc.com/image/upload/f_auto,ar_16:9,w_500,c_fill,g_auto,q_90/video/2023/05/02/EXT_Arsenal_3-1_Chelsea_EPL_2022-23.jpg" class="card-img-top rounded mb-3" alt="Arsenal vs Chelsea">
+        <h5 class="card-title">Arsenal 3 - 1 Chelsea</h5>
+        <p class="card-text">A powerful comeback at the Emirates as Arsenal dominated in the second half.</p>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#arsenalChelseaModal">Read More</button>
+      </div>
+    </div>
+
+    <!-- Story 2 -->
+    <div class="col-md-6">
+      <div class="card p-3 shadow-sm">
+        <img src="https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/ef52/live/600810a0-2a22-11ee-b52f-69b9487cede3.jpg" class="card-img-top rounded mb-3" alt="Arsenal Injury Update">
+        <h5 class="card-title">Injury Update</h5>
+        <p class="card-text">Latest on player fitness ahead of the next Premier League fixture.</p>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#injuryUpdateModal">View Details</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Arsenal vs Chelsea Modal -->
+<div class="modal fade" id="arsenalChelseaModal" tabindex="-1" aria-labelledby="arsenalChelseaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title" id="arsenalChelseaLabel">Arsenal 3 - 1 Chelsea</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://i.ytimg.com/vi/z3lVC-n0qQM/mqdefault.jpg" class="img-fluid rounded mb-3" alt="Arsenal vs Chelsea">
+        <p>Arsenal staged a powerful comeback at the Emirates, dominating Chelsea in the second half. The Gunners showed tactical brilliance, scoring three impressive goals to secure a 3-1 victory.</p>
+        <p>Key performances came from the midfield duo and the forward line, who pressed high and maintained control throughout the match. This result strengthens Arsenal’s title hopes and boosts confidence heading into upcoming fixtures.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Injury Update Modal -->
+<div class="modal fade" id="injuryUpdateModal" tabindex="-1" aria-labelledby="injuryUpdateLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title" id="injuryUpdateLabel">Injury Update</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://i2-prod.manchestereveningnews.co.uk/article31226533.ece/ALTERNATES/s615/0_GettyImages-2204935886.jpg" class="img-fluid rounded mb-3" alt="Injury Update">
+        <p>Arsenal’s medical team has issued an update on key players ahead of the next Premier League fixture. The team confirmed that several stars are in the final stages of recovery and expected to return soon.</p>
+        <p>The manager emphasized squad depth and rotation to maintain performance levels as Arsenal prepares for a crucial run of fixtures across all competitions.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="text-center bg-dark text-white py-3 mt-5">
+  <p>&copy; 2025 Arsenal FC | Designed by Team Arsenal | Uganda Christian University</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

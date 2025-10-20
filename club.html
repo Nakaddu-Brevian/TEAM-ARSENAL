@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arsenal FC | Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background-color: #da1414;
+      color: white;
+      text-align: center;
+      padding: 50px 0 30px 0;
+    }
+
+    header h1 {
+      font-weight: 700;
+    }
+
+    .hero {
+      background: url('https://wallpapercave.com/wp/wp11274798.jpg') center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.55);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .divider {
+      height: 5px;
+      background-color: #da1414;
+      margin: 20px 0;
+    }
+
+    .section-title {
+      color: #da1414;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .fade-in {
+      animation: fadeIn 1.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Arsenal Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:black;">
+  <div class="container">
+    <!-- Arsenal Logo -->
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+      <img src="images/arsenal_logo.png" alt="Logo" width="40" class="me-2">
+      Arsenal FC
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="fixtures.html">Fixtures</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="tickets.html">Tickets</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+        <li class="nav-item"><a class="nav-link" href="club.html">Club</a></li>
+        <li class="nav-item"><a class="nav-link" href="more.html">More</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header class="fade-in">
+  <h1>ARSENAL FOOTBALL CLUB</h1>
+  <p class="lead">Club Overview & Heritage</p>
+</header>
+
+
+<section class="hero fade-in">
+  <div class="hero-content">
+    <h2 class="display-6 fw-bold">The Arsenal Heritage</h2>
+    <p>Celebrating over 130 years of passion, glory, and football excellence  a legacy built on <br>
+      teamwork, resilience, and the unwavering spirit that defines Arsenal Football Club. <br>
+      From our humble beginnings in Woolwich to the grand Emirates Stadium, every era has been marked by <br>
+      unforgettable victories, legendary players, and a deep connection with millions of fans around the world</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="container my-5 fade-in">
+  <h2 class="section-title text-center">Club Leadership & Achievements</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <ul class="list-group shadow-sm">
+        <li class="list-group-item"><strong>Owner:</strong> Kroenke Sports & Entertainment</li>
+        <li class="list-group-item"><strong>Manager:</strong> Mikel Arteta</li>
+        <li class="list-group-item"><strong>Captain:</strong> Martin Ødegaard</li>
+        <li class="list-group-item"><strong>Stadium:</strong> Emirates Stadium (Capacity: 60,704)</li>
+        <li class="list-group-item"><strong>Major Honors:</strong> 13 League Titles, 14 FA Cups, 2 League Cups</li>
+      </ul>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="https://i2-prod.football.london/incoming/article32704849.ece/ALTERNATES/s615/0_Leandro-Trossard-and-Arsenal.jpg"
+           alt="Arsenal Team"
+           class="img-fluid rounded shadow">
+    </div>
+  </div>
+</section>
+
+<section class="bg-white py-5 fade-in">
+  <div class="container text-center">
+    <h2 class="section-title">Our Journey Through Time</h2>
+    <p class="mb-4">
+      Founded in <strong>1886</strong> in Woolwich, Arsenal began as a small workers’ club known as Dial Square. 
+      Over the decades, the Gunners have transformed into one of the world’s elite football institutions, 
+      known for their attacking football, loyal supporters, and strong values both on and off the pitch.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Emirates_Stadium_-_canons.jpg/2560px-Emirates_Stadium_-_canons.jpg"
+         alt="Emirates Stadium"
+         class="img-fluid rounded shadow"
+         style="max-width: 85%;">
+  </div>
+</section>
+
+<section class="container my-5 fade-in">
+  <h2 class="section-title text-center">What Makes Arsenal Exceptional</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://www.justarsenal.com/wp-content/uploads/2024/02/Arsenal-squad.jpg" class="card-img-top" alt="Team Spirit">
+        <div class="card-body">
+          <h5 class="card-title text-danger">Team Spirit</h5>
+          <p class="card-text">Arsenal’s success is rooted in unity and teamwork. Every player contributes to the vision of creating fast, creative, and attacking football admired worldwide.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://www.arsenal.com/sites/default/files/styles/large_16x9/public/images/16_9%20NOTEXT%20WEB.jpg?h=d1cb525d&auto=webp&itok=MdK-rv1C" class="card-img-top" alt="Leadership">
+        <div class="card-body">
+          <h5 class="card-title text-danger">Leadership</h5>
+          <p class="card-text">Under Mikel Arteta, Arsenal has entered a new era of confidence, tactical excellence, and youthful energy, blending experience with innovation for success.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://arsenalacademy.co.uk/wp-content/uploads/2021/10/ArsenalAcademy-Academy-Share-1200x675-1.jpg" class="card-img-top" alt="Youth Academy">
+        <div class="card-body">
+          <h5 class="card-title text-danger">Youth Development</h5>
+          <p class="card-text">The Arsenal Academy continues to nurture young talents who embrace discipline, skill, and the Gunners’ DNA, preparing them to shine at the highest levels.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Arsenal FC | Designed by Team Arsenal | Uganda Christian University</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
